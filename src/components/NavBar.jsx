@@ -20,13 +20,13 @@ function NavBar() {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-black fixed top-0 z-10 w-full">
+    <nav className="bg-black border-gray-200 dark:bg-black fixed top-0 z-10 w-full">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <button
           onClick={() => handleScroll("about")}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img className="w-20" src={logo} alt="Logo" />
+          <img className="w-20 sm:w-8" src={logo} alt="Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             EliethB
           </span>
