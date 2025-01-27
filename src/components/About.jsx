@@ -1,8 +1,9 @@
 import React from "react";
 import "../About.css";
 import imgURL2 from "../img/about.jpg";
-import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp, FaFile } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
+import cv from "../file/CV ELIETH BARQUERO.pdf";
 
 function About() {
   return (
@@ -43,6 +44,15 @@ function About() {
               <i>
                 <FaWhatsapp className="text-3xl" />
               </i>
+            </a>
+            <a
+              className="text-white"
+              href={cv}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="EliethBarquero_CV"
+            >
+              <FaFile className="text-3xl" />
             </a>
           </div>
         </div>
