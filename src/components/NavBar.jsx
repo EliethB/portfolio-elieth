@@ -26,7 +26,7 @@ function NavBar() {
           onClick={() => handleScroll("about")}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img className="w-20 sm:w-8" src={logo} alt="Logo" />
+          <img className="lg:w-20 w-9" src={logo} alt="Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
             EliethB
           </span>
@@ -34,7 +34,7 @@ function NavBar() {
         <button
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen}
         >
@@ -58,14 +58,14 @@ function NavBar() {
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } md:block absolute top-0 left-0 h-screen w-1/2 bg-gray-50 dark:bg-black p-4 md:static md:h-auto md:w-auto md:bg-transparent md:p-0`}
+          } md:block absolute top-0 left-0 h-screen w-1/2 bg-black p-4 md:static md:h-auto md:w-auto md:bg-transparent md:p-0`}
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse">
             <li>
               <button
                 onClick={() => handleScroll("about")}
-                className="block py-2 px-3 text-xl text-gray-900 hover:bg-gray-100 dark:text-white md:hover:bg-transparent md:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-xl text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
               >
                 About
               </button>
@@ -73,7 +73,7 @@ function NavBar() {
             <li>
               <button
                 onClick={() => handleScroll("skills")}
-                className="block py-2 px-3 text-xl text-gray-900 hover:bg-gray-100 dark:text-white md:hover:bg-transparent md:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-xl text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
               >
                 Skills
               </button>
@@ -81,7 +81,7 @@ function NavBar() {
             <li>
               <button
                 onClick={() => handleScroll("projects")}
-                className="block py-2 px-3 text-xl text-gray-900 hover:bg-gray-100 dark:text-white md:hover:bg-transparent md:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-xl text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
               >
                 Projects
               </button>
@@ -89,7 +89,7 @@ function NavBar() {
             <li>
               <button
                 onClick={() => handleScroll("experience")}
-                className="block py-2 px-3 text-xl text-gray-900 hover:bg-gray-100 dark:text-white md:hover:bg-transparent md:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-xl text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
               >
                 Experience
               </button>
@@ -97,7 +97,7 @@ function NavBar() {
             <li>
               <button
                 onClick={() => handleScroll("education")}
-                className="block py-2 px-3 text-xl text-gray-900 hover:bg-gray-100 dark:text-white md:hover:bg-transparent md:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-xl text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
               >
                 Education
               </button>
@@ -105,7 +105,7 @@ function NavBar() {
             <li>
               <button
                 onClick={() => handleScroll("contact")}
-                className="block py-2 px-3 text-xl text-gray-900 hover:bg-gray-100 dark:text-white md:hover:bg-transparent md:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-xl text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
               >
                 Contact me
               </button>
