@@ -6,15 +6,13 @@ import { BiLogoGmail } from "react-icons/bi";
 
 function About() {
   return (
-    <div className="flex flex-col-reverse md:flex-row h-screen items-center justify-center px-4">
+    <div className="flex flex-col-reverse md:flex-row min-h-screen items-center justify-center px-4">
       <div className="flex flex-col justify-center w-full md:w-1/2 text-section">
         <div className="relative content">
-          <div className="visible">
-            <p>Hello</p>
-            <ul className="moved">
-              <li>World !</li>
-              <li>Dev !</li>
-            </ul>
+          <div className="visible flex items-center gap-2">
+            <p className="text-teal-600 parp">[</p>
+            Hello World!
+            <p className="text-teal-600 parp">]</p>
           </div>
           <div className="pStyle mt-4">
             <p className="text-white">I am</p>

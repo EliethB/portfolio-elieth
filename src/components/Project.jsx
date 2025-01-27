@@ -1,5 +1,5 @@
 import "../Card.css";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function Project({ title, subtitle, description, imageSrc }) {
   return (
@@ -8,9 +8,7 @@ function Project({ title, subtitle, description, imageSrc }) {
       <p className="heading">{title}</p>
       <p>{subtitle}</p>
       {Array.isArray(description) && description.length > 0 ? (
-        description.map((desc, index) => (
-          <p key={index}>{desc}</p>
-        ))
+        description.map((desc, index) => <p key={index}>{desc}</p>)
       ) : (
         <p>No description available.</p>
       )}

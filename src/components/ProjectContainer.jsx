@@ -1,11 +1,12 @@
 import React from "react";
-import Project from "./Project";
+import Project from "./Project"; // Asegúrate de que esta importación sea correcta
 import confidential from "../img/confidencial.webp";
 import Restaurant from "../img/Restaurant.jpg";
 import Notes from "../img/Notes.jpg";
 import SaborB from "../img/saborB.jpg";
 import productCRUD from "../img/productCRUD.jpg";
 import "../Card.css";
+
 const projectData = [
   {
     title: "Eclipse Software",
@@ -32,7 +33,7 @@ const projectData = [
     subtitle: "Web Application",
     description: [
       "This project is still in progress. It includes various modules and focuses on a website featuring fast food menus. Additionally, it provides a brief history of the company and its location.",
-      "This project features a responsive design and is implemented using React.js with Tailwind CSS. It includes various modules to enhance user experience, ensuring seamless navigation across devices. ",
+      "This project features a responsive design and is implemented using React.js with Tailwind CSS. It includes various modules to enhance user experience, ensuring seamless navigation across devices.",
     ],
     imageSrc: SaborB,
   },
@@ -59,7 +60,7 @@ const projectData = [
     subtitle: "Web Application",
     description: [
       "I developed a project that consists of a CRUD for products and categories, where products can be searched by category, as well as adding, deleting, and editing categories.",
-      "The project is built with .NET, C#, SQL Server, and RESTful API, utilizing Razor views and an MVC architecture. Additionally, I implemented responsive design to ensure optimal user experience across devices. ",
+      "The project is built with .NET, C#, SQL Server, and RESTful API, utilizing Razor views and an MVC architecture. Additionally, I implemented responsive design to ensure optimal user experience across devices.",
       "However, the real challenge of this project lies in using stored procedures for specific queries and inserting data into the database.",
     ],
     imageSrc: productCRUD,
@@ -68,16 +69,21 @@ const projectData = [
 
 function ProjectsContainer() {
   return (
-    <div className="container2">
-      {projectData.map((project, index) => (
-        <Project
-          key={index}
-          title={project.title}
-          subtitle={project.subtitle}
-          description={project.description}
-          imageSrc={project.imageSrc}
-        />
-      ))}
+    <div className="container2 flex flex-col items-center justify-center">
+      <h1 className="text-5xl font-bold text-white text-center mb-8 mx-auto">
+        Projects
+      </h1>
+      <div className="flex flex-wrap justify-center gap-8">
+        {projectData.map((project, index) => (
+          <Project
+            key={index}
+            title={project.title}
+            subtitle={project.subtitle}
+            description={project.description}
+            imageSrc={project.imageSrc}
+          />
+        ))}
+      </div>
     </div>
   );
 }
